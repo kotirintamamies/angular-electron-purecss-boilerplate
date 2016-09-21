@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="app">
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/pure.css" />
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+        <meta charset="UTF-8">
+        <title>angular-electron-purecss-boilerplate</title>
+    </head>
+    <script src="lib/angular.min.js"></script>
+    <script src="ng-app.js"></script>
+
+    <body ng-controller="main">
+        <h1 ng-bind = "title"></h1>
+        <form class="pure-form" ng-submit = "addtoDos({name: input, done: false})">
+            <input type="text" ng-model="input" placeholder="Add to ToDo -list" />
+            <button class="pure-button" type="submit">add</button>
+        </form>
+        <form class="pure-form" >
+          <div ng-repeat = "todo in toDos">
+          <label> <input type="checkbox" ng-model="todo.done" />{{todo.name}} </label><a style="color: red; cursor: pointer;" ng-click="deletetoDos($index)"> x</a>
+        </div>
+        </form>
+    </body>
+</html>
