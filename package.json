@@ -1,7 +1,16 @@
 {
   "name": "angular-electron-purecss-boilerplate",
   "version": "0.1.0",
-  "main": "main.js",
-  "dependencies": {
+  "author": "kotirintamamies",
+  "description": "Boilerplate for the lazy",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kotirintamamies/angular-electron-purecss-boilerplate.git"
+  },
+  "devDependencies": {
+    "electron-builder": "^7.3.0",
+    "electron-packager": "^8.0.0",
+    "electron-prebuilt": "^1.4.0"
   }
 }
